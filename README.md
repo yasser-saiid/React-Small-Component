@@ -1,3 +1,7 @@
+#### Notes
+
+All components in this repository bulid by javascript just javascript code without typescript
+
 #### useState
 
 1. Birthday Reminder
