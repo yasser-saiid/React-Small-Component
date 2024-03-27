@@ -1,0 +1,167 @@
+/* ============= GLOBAL CSS =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Fugaz+One&family=Lato:wght@300;400;700;900&family=Pompiere&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+:root {
+  /* COLORS */
+  --off-white: #f3f3f5;
+  --white: #ffffff;
+  --black: #000;
+  --light-black: #222;
+  --light-mauve: #645cff;
+  --dark-mauve: #3c3799;
+  --light-blue: #27a8ee;
+  --dark-blue: #1c81b9;
+  --light-red: #f8d7da;
+  --dark-red: #842029;
+  --light-green: #d1e7dd;
+  --dark-green: #0f5132;
+  --light-orange: #f38d1e;
+  --dark-orange: #e06a2d;
+  --light-gray: #c2c1c1;
+  --dark-gray: #727272;
+  /* BORDERS*/
+  --border-radius: 0.4rem;
+  --border-solid: 1px solid #dddddd;
+  /* WIDTH */
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  /* FONT FAMILY */
+  --font-family: 'Fira Sans Condensed', sans-serif;
+  /* BOX SHADOW*/
+  --light-shadow: 2px 4px 8px -1px #00000057, 0 1px 2px 0 #00000030;
+  --dark-shadow: 0px 10px 15px -3px #00000075, 0px 4px 6px -2px #0000005e;
+  /* MORE HELPER STYLE */
+  --small-text: 0.875rem;
+  --extra-small-text: 0.7em;
+  --letter-spacing: 1px;
+  --line-height: 1.6;
+  --transition: all 0.3s ease-in-out;
+}
+
+body {
+  background: var(--white);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+}
+/* TEXT AND HEADING */
+p {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  line-height: var(--line-height);
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  color: var(--light-mauve);
+}
+
+h1 {
+  font-size: calc(2.375rem + 1.7vw);
+}
+
+h2 {
+  font-size: calc(2.325rem + 1.3vw);
+}
+
+h3 {
+  font-size: calc(2.3rem + 0.8vw);
+}
+
+h4 {
+  font-size: calc(2rem + 0.6vw);
+}
+
+h5 {
+  font-size: calc(1.85rem + 0.6vw);
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: calc(1.75rem + 1.7vw);
+  }
+
+  h2 {
+    font-size: calc(1.65rem + 1.5vw);
+  }
+
+  h3 {
+    font-size: calc(1.55rem + 1.2vw);
+  }
+
+  h4 {
+    font-size: calc(1.45rem + 1.1vw);
+  }
+
+  h5 {
+    font-size: calc(1.45rem + 0.8vw);
+  }
+  p {
+    font-size: 1.05rem;
+  }
+}
+
+.text {
+  margin-bottom: 1.5rem;
+  max-width: 40em;
+}
+
+small,
+.text-small {
+  font-size: var(--small-text);
+  color: var(--dark-gray);
+  text-transform: capitalize;
+  display: block;
+}
+
+/* LINK */
+a {
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.section-container {
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+
+.full-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-center {
+  width: 85vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ============== START PROJECT STYLE  ======== */
